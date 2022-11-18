@@ -7,15 +7,17 @@ public class Exercise3_2 {
         System.out.println("何行分入力しますか？");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        String s = input.nextLine();
+        input.nextLine();
         String ArrayList[] = new String[n];
         for(int i = 0; i < n; i++) {
             System.out.println(i+1 + "行目:");
             ArrayList[i] = input.nextLine();
         }
+        int j = 0;
         System.out.println("入力した文字列:");
         for(String list : ArrayList){
-            System.out.println(list);
+            System.out.println("[" + j + "]" + list);
+            j++;
         }
     }
 }

@@ -11,11 +11,11 @@ public class Fighter {
         this.name = name;
     }
     public void attack(Fighter enemy){
-        enemy.hitPoint -= enemy.power;
-        System.out.println(enemy.name + " は " + enemy.power + " ダメージを与えた。");
+        enemy.hitPoint -= this.power;
+        System.out.println(this.name + " は " + enemy.name + " に " + this.power + " ダメージを与えた。");
     }
     public boolean isAlive(){
-        if(hitPoint > 0){
+        if(hitPoint <= 0){
             return true;
         }
         else{

@@ -6,6 +6,6 @@ public class Engine {
         this.rpm = rpm;
     }
     void start(){
-        System.out.println("rpm = " + this.rpm + " でエンジンを始動させました。");
+        System.out.println("rpm = " + rpm + " でエンジンを始動させました。");
     }
 }
