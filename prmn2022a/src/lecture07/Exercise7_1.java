@@ -1,21 +1,13 @@
 package lecture07;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 import java.util.function.Supplier;
 
 public class Exercise7_1 {
     public static void main(String[] args) {
-        System.out.println("1 -> ヒコザル");
-        System.out.println("2 -> ポッチャマ");
-        System.out.println("3 -> ナエトル");
-        System.out.print("ナナカマド博士「ここに三匹のポケモンがおるじゃろ？好きなのを一匹選ぶんじゃ」 > ");
 
         int stdinId = stdinMonsterId();
         int randomId = randomMonsterId();
-
 
     }
 
@@ -29,5 +21,15 @@ public class Exercise7_1 {
         Random rand = new Random();
         int randomId = rand.nextInt(3) + 1;
         return randomId;
+    }
+
+    public enum MonsterCreator{ MONKEY, PENGUIN, TURTLE,;
+        private int id;
+        private Supplier<Monster> supplier;
+        private Map<Integer, MonsterCreator> map;
+
+        public void viewMonsterList(){
+
+        }
     }
 }

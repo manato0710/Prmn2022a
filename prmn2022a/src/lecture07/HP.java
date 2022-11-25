@@ -13,5 +13,12 @@ public class HP {
         this.hp = hp;
     }
 
-
+    public boolean isAlive(){
+        if(hp >dead){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }

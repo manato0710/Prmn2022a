@@ -16,10 +16,10 @@ public class Fighter {
     }
     public boolean isAlive(){
         if(hitPoint <= 0){
-            return true;
+            return false;
         }
         else{
-            return false;
+            return true;
         }
     }
 

@@ -5,7 +5,7 @@ public class Skill {
     private int power;
 
     public String getName(){
-        return this.name;
+        return this.name = name;
     }
 
     public int getPower(){

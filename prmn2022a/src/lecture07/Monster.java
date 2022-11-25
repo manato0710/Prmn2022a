@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Monster implements IMonster{
     private String name;
-    private HP hp = new HP();
+    private HP hp;
     private int attack;
     private int defense;
     private int speed;
@@ -13,6 +13,7 @@ public class Monster implements IMonster{
 
     protected Monster(String name, int hp, int attack, int defence, int speed, List skills){
         this.name = name;
+        this.hp = new HP();
         this.hp.setHp(hp);
         this.attack = attack;
         this.defense = defence;
@@ -33,7 +34,7 @@ public class Monster implements IMonster{
     }
 
     public void setHP(int hp){
-        this.hp.getHp();
+        this.hp.setHp(hp);
     }
 
     public int getAttack(){

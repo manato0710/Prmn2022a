@@ -7,13 +7,13 @@ public class Exercise4_1 {
         while(true) {
             fighter1.attack(fighter2);
             fighter2.setHitPoint(fighter2.getHitPoint());
-            if(fighter2.isAlive()){
+            if(!fighter2.isAlive()){
                 System.out.println(fighter2.getName() + "は倒れた。");
                 break;
             }
             fighter2.attack(fighter1);
             fighter1.setHitPoint(fighter1.getHitPoint());
-            if(fighter1.isAlive()){
+            if(!fighter1.isAlive()){
                 System.out.println(fighter1.getName() + "は倒れた");
                 break;
             }
